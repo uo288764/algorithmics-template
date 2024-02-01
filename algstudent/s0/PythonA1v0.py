@@ -15,3 +15,4 @@ if __name__ == '__main__':
     primoA1(n)
     t2 = time()
     print("n =", n, "***", "time =", int(1000*(t2-t1)), "milliseconds)")
+
