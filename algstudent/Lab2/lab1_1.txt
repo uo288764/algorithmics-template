@@ -1,0 +1,20 @@
+Session 1.1
+
+For Vector 2 with input 100,000,000 gives the output:
+SIZE=100000000 TIME=824 milliseconds SUM=-1035009
+Time spent: 16523ms
+
+For Vector 3 with input 100,000,000 gives the output:
+SIZE=100000000 TIME=821 milliseconds SUM=34598
+Time spent: 24722ms
+
+For Vector 4 with input 1,000,000,000 gives the output:
+SIZE=10 TIME=127947 milliseconds SUM=-133 NTIMES=1000000000
+Time spent: 127995msç
+
+---------------------------------
+Medidas, si quiero 8000, pongo 1000, multiplo de 10, ejecuto, eventualmente saldra el 8000,
+sale 772 ms por ejemplo, voy a la tabla y veo que: 1 000 Microseconds (10-6 sg.)
+
+De modo que el resultado T seria 0,00772
+-------------------------------------------------

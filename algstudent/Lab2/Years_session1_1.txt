@@ -1,0 +1,5 @@
+The maximum value of a float is: 9223372036854775807
+The starting value of currentTimeMillis() is Jan 1, 1970
+The provided date would be 292271023.05 years in advance to 1970
+The max year would be: 9223370329439789075 ms from now
+In years would be Sun Aug 17 08:12:55 CET 292278994
