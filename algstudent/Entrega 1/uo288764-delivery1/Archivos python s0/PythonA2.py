@@ -1,8 +1,8 @@
 from time import time
 
-def primoA3(m):
+def primoA2(m):
     """ returns whether m is prime or not """
-    for i in range (2,m//2+1):
+    for i in range (2,m):
         if m%i==0:
             return False
     return True
@@ -11,13 +11,12 @@ def listadoPrimos(n):
     """ calculates and returns all primes up to n """
     primes = []
     for i in range (2, n+1):
-        if primoA3(i):
+        if primoA2(i):
             primes.append(i)
     return primes
 
 if __name__ == '__main__':
     n = 10000
-    
     for casos in range(7):
         t1 = time()
         primes = listadoPrimos(n)
