@@ -1,0 +1,7 @@
+INDEX VERSION 1.134+C:\Users\bmene\Documents\2o\Algoritmia\Lab 5 WS\.metadata\.plugins\org.eclipse.jdt.core
+1639354633.index
+299656582.index
+3827250435.index
+1865797976.index
+380739999.index
+2295673916.index

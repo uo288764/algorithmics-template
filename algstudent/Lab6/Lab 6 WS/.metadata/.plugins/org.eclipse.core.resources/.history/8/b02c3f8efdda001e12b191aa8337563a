@@ -1,0 +1,67 @@
+package algstudent.s3;
+
+public class Mergesort {
+    public static void mergeSort(int left, int right, int[] elements) {
+        if (right > left) {
+            int center = (right + left) / 2;
+            mergeSort(left, center, elements);
+            mergeSort(center + 1, right, elements);
+            combine(left, center, center + 1, right, elements);
+        }
+    }
+
+    public static void combine(int x1, int x2, int y1, int y2, int[] elements) {
+        int sizeX = x2 - x1 + 1;
+        int sizeY = y2 - y1 + 1;
+
+        int[] x = new int[sizeX];
+        int[] y = new int[sizeY];
+
+        // Copy the elements from left to center into a helper
+        for (int i = 0; i < sizeX; i++) {
+            x[i] = elements[x1 + i];
+        }
+
+        // Copy the elements from center+1 to right into a helper
+        for (int i = 0; i < sizeY; i++) {
+            y[i] = elements[y1 + i];
+        }
+
+        int i = 0, j = 0, k = x1;
+
+      //Copy the smallest elements from either the left or the
+       // right side to the elements collection
+        while (i < sizeX && j < sizeY) {
+            if (x[i] <= y[j]) {
+                elements[k] = x[i];
+                i++;
+            } else {
+                elements[k] = y[j];
+                j++;
+            }
+            k++;
+        }
+
+      //Copy the smallest elements from either the left or the
+        right side to the elements collection        while (i < sizeX) {
+            elements[k] = x[i];
+            i++;
+            k++;
+        }
+
+        while (j < sizeY) {
+            elements[k] = y[j];
+            j++;
+            k++;
+        }
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {12, 11, 13, 5, 6, 7};
+        mergeSort(0, arr.length - 1, arr);
+        System.out.println("Sorted array:");
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+    }
+}
