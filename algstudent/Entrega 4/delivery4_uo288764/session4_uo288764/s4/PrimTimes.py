@@ -2,7 +2,7 @@ import time
 from Prim import prim 
 import Helper as h
 
-filename = "graph32.txt"
+filename = "graph1024.txt"
 m = h.triangularMatrixFromFile(filename)
 
 start_time = time.time()
